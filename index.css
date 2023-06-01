@@ -1,0 +1,61 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#home {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#home .images-slot {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	transition: 1s;
+}
+
+.images-slot img {
+	position: absolute;
+}
+
+.images-slot .first-img {
+	opacity: 0;
+	animation: image-cycle 20s ease-in-out forwards infinite;
+	animation-delay: 1s;
+}
+.images-slot .second-img {
+	opacity: 0;
+	animation: image-cycle 20s ease-in-out forwards infinite;
+	animation-delay: 5s;
+}
+.images-slot .third-img {
+	opacity: 0;
+	animation: image-cycle 20s ease-in-out forwards infinite;
+	animation-delay: 9s;
+}
+.images-slot .fourth-img {
+	opacity: 0;
+	animation: image-cycle 20s ease-in-out forwards infinite;
+	animation-delay: 13s;
+}
+.images-slot .fifth-img {
+	opacity: 0;
+	animation: image-cycle 20s ease-in-out forwards infinite;
+	animation-delay: 17s;
+}
+
+@keyframes image-cycle {
+	10% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
